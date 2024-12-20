@@ -1,8 +1,4 @@
-// app/page.js (Server Component)
-import dynamic from 'next/dynamic';
-
-
-const ConfirmEmailClient = dynamic(() => import('./ConfirmEmailClient'), { ssr: false });
+import ConfirmEmailClient from "./ConfirmEmailClient";
 
 export default function Account_setting_Page() {
   return (
