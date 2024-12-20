@@ -9,7 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@auth/firebase-adapter": "^2.7.4",
     "bcryptjs": "^2.4.3",
     "crypto-js": "^4.2.0",
     "firebase": "^11.1.0",
