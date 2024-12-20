@@ -1,0 +1,286 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    margin: 30px 0px;
+  
+  }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+  }
+  .title h2 {
+  
+    font-weight: 300;
+    border-radius: 10px;
+    padding: 10px;
+    /* border-bottom:2px solid red; */
+  }
+  .title button {
+    border-radius: 20px;
+    border: 1px solid  rgb(42, 212, 0) ;
+    background-color: white;
+    /* width: 100px; */
+    height: 30px;
+    padding: 0px 10px;
+    color: rgb(42, 212, 0);
+    font-size: 15px;
+    font-weight: 600;
+    /* margin-top: 42px; */
+  }
+  .title button:hover {
+    background-color: green;
+    color: white;
+    cursor: pointer;
+  }
+  .categorySection{
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+  }
+  .In_container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* overflow: hidden; */
+    margin-top: 20px;
+    background-color: white;
+  }
+  .card {
+    overflow: hidden;
+    margin: 20px;
+    width: 21%;
+    height: 480px;
+    border-radius: 20px;
+    transition: transform 0.3s ease; /* Smooth scaling transition */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); 
+  
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0px 8px 16px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2), 0 -8px 8px rgba(0, 0, 0, 0.1); 
+
+  }
+  
+  .card:hover {
+    transform: scale(1.1);
+  }
+  
+  .hoverName{
+  display: none;
+  backdrop-filter: blur(5px);
+  background: #00000046;
+  padding:10px;
+  color: white;
+  position: relative;
+  bottom: 27%;
+  
+  }
+  
+  .image_box {
+    width: 100%; 
+    height: 350px; 
+    /* border: 2px solid red; */
+  }
+  .image {
+    object-fit: cover; 
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    }
+    .info{
+      
+      padding:10px;
+      margin-top: 10px;
+      height: 111px;
+      overflow: hidden;
+      
+    }
+    
+    .info p{
+      font-size: 13px;
+  
+  
+    }
+    .name{
+      display: flex;
+      align-items: center;
+    }
+    .name h2{
+      color: rgb(42, 212, 0);
+      font-weight: 100;
+  
+    }
+    .name h4{
+      margin-left: 10px;
+    }
+    .buttonbox{
+      position: relative;
+      bottom: 150px;
+      width: 100%;
+      background: #00000054;
+      backdrop-filter: blur(5px);
+      height: fit-content;
+      display: flex;
+      align-items: center;
+      
+    }
+    .buttonbox button{
+      width: 50%;
+      padding: 3px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background: transparent;
+      color: white;
+      border: none;
+    }
+    .buttonbox button:hover{
+      color: rgb(42, 212, 0);
+      cursor: pointer;
+    }
+    .showmorebox{
+      width: 100%;
+      height: 1px;
+      margin-top: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #000;
+    }
+    .showmorebox button{
+      cursor: pointer;
+      padding: 5px 100px;
+      border-radius: 10px;
+      border: 1px solid rgb(42, 212, 0);
+      background-color: white; 
+    }
+    .showmorebox button:hover{
+    background-color:  rgb(42, 212, 0) ;
+    color: white;
+    }
+  .reviews{
+    color:rgb(42, 212, 0) ;
+    margin-top: 5px;
+    font-size: 13px;
+    display: flex;
+  }
+  
+  
+    /* Modal styles */
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    
+    .modalContent {
+      background-color: #fff;
+      padding: 2rem;
+      width: 90%;
+      max-width: 500px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      text-align: center;
+  }
+  
+  .modal h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .modalField {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  
+  .modalField p {
+    font-weight: bold;
+    margin-right: 1rem;
+  }
+  
+  .modalField span {
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 0.5rem;
+  }
+  
+  .modalField button {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .modalField button:hover {
+    background-color: #ddd;
+  }
+  
+  .modalContent button {
+    background-color: #0070f3;
+    color: #fff;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .modalContent button:hover {
+    background-color: #005bb5;
+  }
+  
+  .modal button {
+    margin: 1rem 0.5rem 0;
+  }
+  
+  .modal button:first-of-type {
+    background-color: #0070f3;
+    color: #fff;
+  }
+  
+  .modal button:last-of-type {
+    background-color: #ccc;
+    color: #333;
+  }
+  
+  .modal button:last-of-type:hover {
+    background-color: #bbb;
+  }
+  
+
+  .loadingOverlay {
+ 
+    width: 100%; 
+    height: 520px;
+    /* background-color: rgba(0, 0, 0, 0.247); */
+    backdrop-filter: blur(2px);
+    z-index: 1000;
+    position: relative;
+    bottom: 500px;
+  }
+  

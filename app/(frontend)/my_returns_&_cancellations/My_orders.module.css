@@ -1,0 +1,342 @@
+.ordersContainer {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: left;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .ordersContainer p{
+    font-size: 12px;
+  }
+  .Action{
+  display: flex;
+  align-items: center;
+  }
+  .Action a{
+    background-color: #2c92ff;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 12px; 
+  }
+  .Action a:hover{
+    background-color: #0068d6;
+  }
+  
+  .details{
+    border: 1px solid greenyellow ;
+  }
+  .reviewbox{
+    margin: 5px 0;
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+  }
+  
+  
+  .title {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .loadingText,
+  .noOrders {
+    font-size: 18px;
+    color: #6c757d;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .ordersList {
+    /* display: flex; */
+    /* flex-direction: column; */
+    gap: 20px;
+    padding: 10px;
+  }
+  
+  .orderCard {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background: #ffffff;
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .orderCard:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .orderCard h3 {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 100;
+    /* color: rgb(0, 177, 0); */
+    color: black;
+  }
+  
+ 
+  .Review{
+    background-color: rgb(255, 255, 255) ;
+    padding: 5px;
+    width: fit-content;
+    border-radius: 10px;
+  }
+  .orderCard ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+  }
+  
+  .orderCard ul li {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+  }
+  
+  .orderCard ul li::before {
+    content: "• ";
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  .orderCard ul li span {
+    font-weight: bold;
+    color: #333;
+  }
+  .orderproducts{
+    padding: 10px;
+    background-color: white;
+    margin-top: 5px;
+    width: fit-content;
+  }
+  .ReturnBtn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-start;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .ReturnBtn:hover {
+    background-color: #218838;
+  }
+  
+
+
+  .returnPopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Dim the background */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+  }
+  .box{
+    overflow-y: scroll;
+    background-color: white;
+    padding: 40px;
+    height: 100vh;
+    border-radius: 10px;
+    position: absolute;
+    top: 0%;
+  }
+  .returnPopup h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .productSelection {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .input{
+    display: flex;
+  }
+  .productSelection input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .productSelection label {
+    font-size: 16px;
+    color: #555;
+    display: flex;
+    align-items: center;
+  }
+  
+  .returnDetails {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+  }
+  
+  .returnDetails label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444;
+  }
+  
+  .returnDetails textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+  }
+  
+  .returnDetails textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .returnDetails input[type="file"] {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .returnPopupWrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .returnPopup {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 50%;
+    position: relative;
+    /* max-width: 500px; */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  }
+  
+ .returnPopup button {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+ .returnPopup button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+ .returnPopup button:hover:not(:disabled) {
+    background-color: #0056b3;
+  }
+  .noteBox {
+    background-color: #ffe5e5;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    color: #ff0000;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+  }
+  .noteBox p {
+    margin: 0;
+    font-weight: 500;
+    width: 40vw;
+  }
+
+
+
+.trackingContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px 55px;
+  border-radius: 8px;
+}
+
+.trackingStep {
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  background-color: #dcdcdc;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 700;
+
+}
+
+.activeStep {
+  color: white;
+  background-color: rgb(27, 196, 27);
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+
+.stepConnector {
+  height: 10px;
+  width: 20px;
+  background-color: #dcdcdc;
+  flex: 1;
+  margin: 0;
+}
+
+.activeConnector {
+  background-color: rgb(27, 196, 27);
+
+}
+
+.orderdate {
+  font-size: 1rem;
+  color: #555;
+}
+
+.orderTimer {
+  font-size: 1rem;
+  color: #d9534f;
+  margin-top: 5px;
+  font-weight: 600;
+  background-color: rgb(0, 255, 13);
+  padding: 10px;
+  width: fit-content;
+}

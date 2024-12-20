@@ -1,0 +1,137 @@
+/* Container for the form */
+.authContainer {
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 500px;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Form title */
+  .authContainer h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* Labels */
+  .authContainer label {
+    display: block;
+    /* margin: 0.5rem 0 0.2rem; */
+    font-weight: 500;
+    color: #555;
+  }
+  
+  /* Input fields */
+  .authContainer input[type="text"],
+  .authContainer input[type="email"],
+  .authContainer input[type="password"],
+  .authContainer input[type="tel"],
+  .authContainer input[type="file"] {
+    width: 100%;
+    padding:10px 50px 10px 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .authContainer input[type="text"]:focus,
+  .authContainer input[type="email"]:focus,
+  .authContainer input[type="password"]:focus,
+  .authContainer input[type="tel"]:focus {
+    border-color: rgb(42, 212, 0);
+    outline: none;
+  }
+  
+  /* Password field container with show/hide button */
+  .passwordContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .passwordContainer input {
+    padding-right: 3rem;
+  }
+  
+  .showPasswordButton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: none;
+    border: none;
+    color: rgb(42, 212, 0);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.9rem;
+    outline: none;
+  }
+  
+  /* Signup button */
+  .authContainer button[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: rgb(42, 212, 0);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .authContainer button[type="submit"]:hover {
+    background-color: rgb(42, 212, 0);
+  }
+  
+  /* Error messages */
+  .errorMessage {
+    color: #ff4d4d;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Profile image file input styling */
+  .authContainer input[type="file"] {
+    padding: 0.4rem;
+    cursor: pointer;
+  }
+  
+  /* Additional styling */
+  .authContainer input::placeholder {
+    color: #aaa;
+  }
+  .imagePreview {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .profileImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+  }
+  
+  
+  /* Responsive design */
+  @media (max-width: 480px) {
+    .authContainer {
+      padding: 1.5rem;
+    }
+    .authContainer h2 {
+      font-size: 1.5rem;
+    }
+  }
+  

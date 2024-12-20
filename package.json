@@ -9,13 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@auth/firebase-adapter": "^2.7.4",
+    "bcryptjs": "^2.4.3",
+    "crypto-js": "^4.2.0",
+    "firebase": "^11.1.0",
+    "firebase-admin": "^13.0.2",
+    "jsonwebtoken": "^9.0.2",
+    "next": "15.1.2",
+    "next-auth": "^4.24.11",
+    "nodemailer": "^6.9.16",
+    "nprogress": "^0.2.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "next": "15.1.2"
+    "react-icons": "^5.4.0",
+    "swiper": "^11.1.15"
   },
   "devDependencies": {
+    "@eslint/eslintrc": "^3",
     "eslint": "^9",
-    "eslint-config-next": "15.1.2",
-    "@eslint/eslintrc": "^3"
+    "eslint-config-next": "15.1.2"
   }
 }

@@ -1,0 +1,113 @@
+/* Style for the loader container */
+.loaderContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 80vh;
+  /* background-color: #f0f0f0;  */
+}
+
+/* Style for the title */
+.title {
+  width: 150px;
+  height: 40px;
+  margin: 2%;
+  margin-right: 72%;
+  background-color: #bbb; /* Lighter gray */
+  border-radius: 10px;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Box container for the cards */
+.box {
+  width: 80%;
+  height: 450px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Individual card */
+.card {
+  width: 21%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #dbdada; /* Light background */
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Style for the top part of the card */
+.a {
+  width: 100%;
+  height: 120px;
+  background-color: #f2f2f2; /* Subtle light gray */
+  position: relative;
+  top: 73%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+/* Styling for the loading bars inside the card */
+.b1, .b2, .b3 {
+  height: 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #e0e0e0; /* Default gray */
+  animation: loadingBar 1.5s infinite ease-in-out;
+}
+
+/* Professional green color scheme for bars */
+.b2, .b3 {
+  background: linear-gradient(90deg, rgba(72, 255, 0, 0.6), rgba(72, 255, 0, 1));
+  animation: loadingBarGreen 1.5s infinite ease-in-out;
+}
+
+/* Keyframe animations */
+@keyframes pulse {
+  0% {
+    background-color: #bbb;
+  }
+  50% {
+    background-color: #ccc;
+  }
+  100% {
+    background-color: #bbb;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes loadingBar {
+  0% {
+    width: 50%;
+  }
+  50% {
+    width: 80%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes loadingBarGreen {
+  0% {
+    width: 40%;
+  }
+  50% {
+    width: 60%;
+  }
+  100% {
+    width: 40%;
+  }
+}

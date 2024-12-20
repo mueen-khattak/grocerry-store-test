@@ -1,0 +1,11 @@
+.main{
+width: 100vw;
+height: 40vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.box{
+padding: 20px;
+background-color: rgb(247, 247, 247);
+}

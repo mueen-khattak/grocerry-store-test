@@ -1,0 +1,8 @@
+.main{
+    position: absolute;
+    top:58px;
+    left: 200px;
+    background-color: rgb(243, 243, 243);
+    width: 84.1vw;
+    border-radius:4px ;
+}

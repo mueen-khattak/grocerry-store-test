@@ -1,0 +1,108 @@
+/* pages/admin/Admin.module.css */
+
+.adminContainer {
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -10;
+  }
+
+  .sidebar {
+    width: 14vw;
+    background-color: #ffffff;
+    z-index: 100;
+    position: fixed;
+    height: 100vh;
+    margin: 5px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.2);
+
+  }
+  .sidebar h1 {
+    padding: 10px 0 10px 10px;
+  }
+  .logo {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navList {
+    margin-left: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .navList a {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+  .navList a:hover {
+    background-color: rgb(5, 155, 255);
+    color: white;
+    border-radius: 30px;
+  }
+  .sidebar .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    background: #000;
+    border: none;
+    border-radius: 20px;
+    width: 80%;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+
+  }
+  .sidebar .button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #000;
+  }
+  .sidebar span{
+    margin-right: 10px;
+  }
+  .navList span{
+    margin-right: 10px;
+  }
+  .blank{
+    width: 100vw;
+    height: 49px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 90;
+  }
+  .header {
+    background-color: #ffffff;
+    padding: 10px 60px 10px 30px;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 14.7vw;
+    width: 85%;
+    height: 40px;
+    z-index: 100;
+    box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.2);
+
+
+  }
+  .header h1 {
+    text-align: left;
+    font-size: 20px;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    width: 13%;
+    align-items: center;
+  }
+  

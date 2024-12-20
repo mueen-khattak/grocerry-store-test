@@ -1,0 +1,200 @@
+
+
+.loadingText {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+}
+
+/* Main Container */
+.returnPageContainer {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Table Styles */
+.userDetailsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.userDetailsTable th,
+.userDetailsTable td {
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+.userDetailsTable th {
+  background-color: #f3f3f3;
+  font-weight: bold;
+  color: #555;
+}
+
+.userDetailsTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.userDetailsTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+.userDetailsTable button {
+  padding: 6px 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.userDetailsTable button:hover {
+  background-color: #0056b3;
+}
+
+/* Modal Styles */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background: #ffffff;
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  overflow-y: auto;
+  max-height: 80%;
+}
+
+.modalContent {
+  position: relative;
+  font-size: 16px;
+  color: #333;
+}
+
+.modalContent h2 {
+  margin-top: 0;
+  color: #444;
+}
+
+.modalContent p {
+  margin: 8px 0;
+}
+
+.modalContent img {
+  display: block;
+  margin: 10px auto;
+  border-radius: 8px;
+  max-width: 100%;
+}
+
+.modalContent h3 {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #555;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+}
+
+/* Close Button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.close:hover {
+  color: #ff0000;
+}
+
+/* Return Request Styles */
+.returnRequest {
+  margin: 15px 0;
+  padding: 15px;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.returnRequest p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.returnImages img {
+  margin: 5px;
+  width: 100px;
+  height: auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
+}
+
+.returnImages img:hover {
+  transform: scale(1.05);
+}
+
+.approveButton {
+  background-color: #2ad400; /* Your theme color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.approveButton:hover {
+  background-color: #28c000; /* Slightly darker shade for hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .returnPageContainer {
+    padding: 15px;
+  }
+
+  .userDetailsTable th,
+  .userDetailsTable td {
+    font-size: 14px;
+  }
+
+  .modal {
+    width: 95%;
+    max-height: 90%;
+  }
+
+  .modalContent p {
+    font-size: 14px;
+  }
+
+  .returnImages img {
+    width: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modalContent h2,
+  .modalContent h3 {
+    font-size: 16px;
+  }
+
+  .close {
+    font-size: 20px;
+  }
+}

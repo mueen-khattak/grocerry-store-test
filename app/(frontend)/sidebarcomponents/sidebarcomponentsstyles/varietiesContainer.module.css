@@ -1,0 +1,39 @@
+/* components/CategoryContainer.module.css */
+
+.container {
+    background-color: transparent;
+      }
+      .container h3{
+        margin: 10px;
+      }
+     
+      .varietiesCard {
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding:0 0 0 10px;
+        width: 100%;
+        overflow: hidden;
+        text-align: left;
+      }
+      
+      .varietiesCard:hover {
+        cursor: pointer;
+        background-color: rgb(42, 212, 0);
+        color: rgb(0, 0, 0);
+      }
+      
+      .varietiesimage {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+        color: white;
+      }
+      
+      .varietiesname {
+        padding: 10px 0;
+        font-size: 13px;
+        font-weight: 400;
+        /* background-color: blueviolet; */
+      }
+    

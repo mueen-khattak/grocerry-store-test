@@ -1,0 +1,188 @@
+/* Container for the form */
+.authContainer {
+    margin: 0 auto;
+    margin-top: 100px;
+    max-width: 500px;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Form title */
+  .authContainer h2 {
+    text-align: center;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* Labels */
+  .authContainer label {
+    display: block;
+    /* margin: 0.5rem 0 0.2rem; */
+    font-weight: 100;
+    font-size: 13px;
+    color: #000000;
+  }
+  
+  /* Input fields */
+  .authContainer input[type="text"],
+  .authContainer input[type="email"],
+  .authContainer input[type="password"],
+  .authContainer input[type="tel"],
+  .authContainer input[type="file"] {
+    width: 100%;
+    padding:10px 50px 10px 10px;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 13px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .authContainer input[type="text"]:focus,
+  .authContainer input[type="email"]:focus,
+  .authContainer input[type="password"]:focus,
+  .authContainer input[type="tel"]:focus {
+    border-color: rgb(42, 212, 0);
+    outline: none;
+  }
+  
+  /* Password field container with show/hide button */
+  .passwordContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .passwordContainer input {
+    padding-right: 3rem;
+  }
+  
+  .showPasswordButton {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: none;
+    border: none;
+    color: rgb(42, 212, 0);
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 0.9rem;
+    outline: none;
+  }
+  
+  /* Signup button */
+  .authContainer button[type="submit"] {
+    width: 100%;
+    padding: 0.8rem;
+    background-color: rgb(42, 212, 0);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .authContainer button[type="submit"]:hover {
+    background-color: rgb(42, 212, 0);
+  }
+  
+  /* Error messages */
+  .errorMessage {
+    color: #ff4d4d;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  /* Profile image file input styling */
+  .authContainer input[type="file"] {
+    padding: 0.4rem;
+    cursor: pointer;
+  }
+  
+  /* Additional styling */
+  .authContainer input::placeholder {
+    color: #aaa;
+  }
+  
+  .authContainer {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .authForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+  }
+  
+  .formGroup label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 5px;
+  }
+  
+  .formGroup input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .submitButton {
+    padding: 10px;
+    background-color: #0070f3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .submitButton:hover {
+    background-color: #005bb5;
+  }
+  
+  .errorMessage {
+    color: red;
+    margin-top: 10px;
+  }
+  
+  .infoMessage {
+    color: green;
+    margin-bottom: 15px;
+  }
+  
+  .signUpLink {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .signUpLink p {
+    font-size: 14px;
+  }
+  
+  .signUpLink a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+  
+  .signUpLink a:hover {
+    text-decoration: underline;
+  }
+  
+  

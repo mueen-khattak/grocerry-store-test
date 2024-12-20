@@ -1,0 +1,82 @@
+/* Container for the loader */
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff; /* Light neutral background for contrast */
+}
+
+/* Box containing all the cards */
+.box {
+  height: 300px;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Add spacing between cards */
+}
+
+/* Individual cards */
+.card {
+  height: 250px;
+  width: 13%;
+  border-radius: 10px;
+  /* background: linear-gradient(90deg, rgba(72, 255, 0, 0.6), rgba(72, 255, 0, 1)); */
+  background-color: #dbdada; /* Light background */
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Textbox inside each card */
+.textbox {
+  position: relative;
+  top: 76%;
+  height: 60px;
+  width: 100%;
+  /* background: linear-gradient(90deg, #6c63ff, #72edf2);  */
+  background-color: #f2f2f2; /* Subtle light gray */
+  /* background: #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* animation: slideUp 1.5s infinite ease-in-out; */
+}
+
+/* Inner text block animation */
+.textbox div {
+  height: 20px;
+  width: 60%;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(0, 212, 255, 1), rgba(2, 255, 0, 1)); /* Professional green-blue gradient */
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* @keyframes slideUp {
+  0%, 100% {
+    top: 80%;
+  }
+  50% {
+    top: 80%;
+  }
+} */
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}

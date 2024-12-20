@@ -1,0 +1,63 @@
+/* components/SuccessPage.module.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #28a745;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .message {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .orderSummary {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  
+  .orderSummary h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .orderSummary p {
+    font-size: 1rem;
+    color: #555;
+    margin: 0.5rem 0;
+  }
+  
+  .homeButton {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .homeButton:hover {
+    background-color: #0056b3;
+  }
+  

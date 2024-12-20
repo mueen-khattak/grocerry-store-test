@@ -1,0 +1,105 @@
+/* Container for the form */
+.authContainer {
+  margin: 0 auto;
+  margin-top: 100px;
+  max-width: 450px;
+  padding: 1.5rem;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  font-family: 'Arial', sans-serif;
+  border: 1px solid #ccc;
+}
+
+.authContainer h2 {
+  text-align: center;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Labels */
+.authContainer label {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+/* Input fields */
+.authContainer input[type="email"],
+.authContainer input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: border-color 0.3s ease;
+}
+
+.authContainer input[type="email"]:focus,
+.authContainer input[type="password"]:focus {
+  border-color: rgb(42, 212, 0);
+  outline: none;
+}
+
+.authContainer input::placeholder {
+  color: #aaa;
+}
+
+/* Submit button */
+.submitButton {
+  width: 100%;
+  padding: 12px;
+  background-color: rgb(42, 212, 0);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: rgb(34, 172, 0);;
+}
+
+/* Error messages */
+.errorMessage {
+  color: #ff4d4d;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Info messages */
+.infoMessage {
+  color: #4caf50;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+/* Link to sign up */
+.signUpLink {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.signUpLink p {
+  font-size: 14px;
+}
+
+.signUpLink a {
+  color: #42a5f5;
+  text-decoration: none;
+}
+
+.signUpLink a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,11 @@
+.main{
+    position: absolute;
+    top:48px;
+    left: 202px;
+    /* background: #ff0000; */
+    background-color: rgb(243, 243, 243);
+    width: 83.7vw;
+    /* height: fit-content; */
+    border-radius:4px ;
+    /* z-index: 1; */
+}

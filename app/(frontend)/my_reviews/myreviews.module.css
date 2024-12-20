@@ -1,0 +1,349 @@
+.ordersContainer {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.Action{
+/* background-color: #28a745; */
+display: flex;
+align-items: center;
+}
+.Action a{
+  background-color: #2c92ff;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 12px; 
+}
+.Action a:hover{
+  background-color: #0068d6;
+}
+
+.details{
+  border: 1px solid greenyellow ;
+}
+.reviewbox{
+  margin: 5px 0;
+  padding: 10px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 20px;
+}
+
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.loadingText,
+.noOrders {
+  font-size: 18px;
+  color: #6c757d;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.ordersList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+.orderCard {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #ffffff;
+  padding: 15px;
+  transition: box-shadow 0.3s ease;
+}
+
+.orderCard:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.orderCard h3 {
+  font-size: 16px;
+  margin-top: 10px;
+  font-weight: 100;
+  /* color: rgb(0, 177, 0); */
+  color: black;
+}
+
+.orderCard p {
+  font-size: 13px;
+  margin: 0 5px;
+  color: #555;
+}
+.Review{
+  background-color: rgb(255, 255, 255) ;
+  padding: 5px;
+  width: fit-content;
+  border-radius: 10px;
+}
+.orderCard ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.orderCard ul li {
+  font-size: 16px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.orderCard ul li::before {
+  content: "• ";
+  color: #007bff;
+  font-weight: bold;
+}
+
+.orderCard ul li span {
+  font-weight: bold;
+  color: #333;
+}
+
+.writeReviewBtn {
+  background-color: rgb(0, 177, 0);
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 30px;
+  font-size: 14px;
+}
+
+.writeReviewBtn:hover {
+  background-color: rgb(0, 143, 0);
+}
+
+.reviewInputContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.reviewInput {
+  width: 100%;
+  min-height: 60px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.submitReviewBtn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+  font-size: 14px;
+}
+
+.submitReviewBtn:hover {
+  background-color: #218838;
+}
+
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popupModal {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.reviewStars{
+     margin: 5px;
+}
+.starRating {
+  margin: 10px 0;
+}
+
+.star {
+  font-size: 24px;
+  color: gray;
+  cursor: pointer;
+}
+
+.starActive {
+  color: gold;
+}
+
+.previewImage {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.date{
+  font-weight: 100;
+  color: darkgray;
+  font-size: 10px;
+}
+.star {
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.starActive {
+  color: #ffd900;
+  font-size: 30px;
+
+}
+
+.reviewImage {
+  margin-top: 10px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.reviewDetails {
+  /* margin-top: 10px; */
+  background-color: white;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.reviewText {
+  margin-bottom: 5px;
+  font-style: italic;
+}
+
+.productname{
+  font-size: 20px;
+
+}
+
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.popupModal {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.3s ease;
+}
+
+.popupModal h3 {
+  margin: 0 0 20px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.reviewInput {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.starRating {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.starRating svg {
+  /* margin: 0 5px; */
+  cursor: pointer;
+}
+
+.imagePreviewContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.imageinput{
+  margin: 20px 0;
+  margin-right: 100%;
+}
+
+.imagePreview {
+  position: relative;
+}
+
+.reviewImage {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.removeImageBtn {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background: #ff5555;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.saveReviewBtn,
+.cancelReviewBtn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.saveReviewBtn {
+  background-color: #28a745;
+  color: white;
+}
+
+.cancelReviewBtn {
+  background-color: #dc3545;
+  color: white;
+}

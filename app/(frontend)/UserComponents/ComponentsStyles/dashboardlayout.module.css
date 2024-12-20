@@ -1,0 +1,76 @@
+
+
+  .sidebar {
+    position: fixed;
+    top: 0px;
+    width: 15%;
+    background-color: #ffffff;
+    z-index: 100;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.2);
+
+  }
+.sidebar div{
+  height: 100%;
+}
+  .navList {
+    margin-left: 0px;
+    margin-bottom: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+
+
+  }
+  .navList button{
+    background-color: blue;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 10px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+  }
+  .navList button:hover{
+    background-color: rgb(66, 66, 245);
+
+  }
+  .navList a {
+    padding: 10px 20px;
+    font-size: 15px;
+  }
+  .navList a :hover{
+    /* background-color: rgb(5, 155, 255); */
+    background-color: rgb(42, 212, 0);
+    color: white;
+  }
+ 
+  .sidebar span{
+    margin-right: 10px;
+  }
+  .navList span{
+    margin-right: 10px;
+}
+  .navList a{
+   display: flex;
+}
+.navList a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navList a:hover {
+  background-color: rgb(42, 212, 0);
+  color: rgb(255, 255, 255);}
+
+.activeLink  {
+  background-color: rgb(42, 212, 0);
+  color: rgb(255, 255, 255);
+}

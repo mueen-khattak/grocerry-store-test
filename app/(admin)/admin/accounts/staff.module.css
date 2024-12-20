@@ -1,0 +1,99 @@
+.header {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 20px 20px;
+    /* background-color: rgb(238, 238, 238); */
+    /* background-color: rgb(19, 226, 0); */
+    background-color: rgb(243, 243, 243);
+    position: fixed;
+    width: 84.7%;
+    height: fit-content;
+  }
+  .header button{
+    margin-left: 10px;
+      padding: 10px;
+      background-color: rgb(0, 194, 0);
+      border: none;
+      border-radius: 10px;
+      font-size: 12px;
+      color: white;
+       
+  }
+  .header button:hover{
+      cursor: pointer;
+      background-color: limegreen;
+  }
+  .title {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 74px 10px 3px 5px;
+    background-color: rgb(255, 255, 255);
+    /* background-color: var(--primary-color); */
+    /* background-color: rgb(255, 255, 255); */
+    font-size: 14px;
+    border-radius: 3px;
+    /* width: 100%; */
+    position: fixed;
+    width: 84%;
+    border: 1px solid rgb(0, 0, 0);
+  
+  }
+  .dataContainer{
+     display: flex;
+     flex-direction: column;
+     /* position: fixed; */
+     /* width: 84.7%; */
+     width: 100%;
+     margin-top: 130px;
+     margin-bottom: 5px;
+     /* overflow-x: scroll; */
+     background-color: chartreuse;
+     /* background-color: rgb(243, 243, 243); */
+  
+  }
+  .data {
+    display: flex;
+    align-items: center;
+    margin: 0px 6px;
+    background-color: rgb(255, 255, 255);
+    /* border: 2px solid rgb(138, 138, 138); */
+    border-radius: 3px;
+    width: 99%;
+    font-size: 14px;
+  
+  
+  }
+  .SN {
+    width: 20%;
+    /* background-color: aqua; */
+    text-align: center;
+  }
+  .Image{
+    width: 20%;
+    /* background-color: aqua; */
+    text-align: center;
+    margin-top: 5px;
+  }
+  .Name {
+    width: 25%;
+    /* background-color: rgb(102, 255, 0);  */
+    text-align: left;
+  }
+  .Email {
+    width: 30%;
+    /* background-color: rgb(0, 110, 255);  */
+    text-align: left;
+  }
+ 
+  .Phone {
+    width: 25%;
+    /* background-color: rgb(0, 247, 255);  */
+    text-align: center;
+  }
+  .Role {
+    width: 10%;
+    /* background-color: rgb(255, 0, 179);  */
+    text-align: center;
+  }

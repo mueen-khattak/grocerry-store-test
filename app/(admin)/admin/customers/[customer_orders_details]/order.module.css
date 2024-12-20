@@ -1,0 +1,167 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  /* background-color: rgb(238, 238, 238); */
+  /* background-color: rgb(19, 226, 0); */
+  background-color: rgb(243, 243, 243);
+  position: fixed;
+  width: 84.7%;
+  height: fit-content;
+}
+.header button{
+    padding: 10px;
+    background-color: rgb(0, 194, 0);
+    border: none;
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+     
+}
+.header button:hover{
+    cursor: pointer;
+    background-color: limegreen;
+}
+.title {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 34px 10px 3px 5px;
+  background-color: rgb(255, 255, 255);
+  /* background-color: var(--primary-color); */
+  /* background-color: rgb(255, 255, 255); */
+  font-size: 14px;
+  border-radius: 3px;
+  /* width: 100%; */
+  position: fixed;
+  width: 84%;
+  border: 1px solid rgb(0, 0, 0);
+
+}
+.dataContainer{
+  display: flex;
+  flex-direction: column;
+  /* position: fixed; */
+  /* width: 84.7%; */
+  width: 100%;
+  margin-top: 60px;
+  /* overflow-x: scroll; */
+  /* background-color: chartreuse; */
+  background-color: rgb(243, 243, 243);
+  
+}
+.databox{
+  margin: 10px 0;
+  background: #ffffff;
+}
+.data {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  margin: 3px 6px;
+  /* background-color: rgb(140, 223, 6); */
+  /* border: 2px solid rgb(138, 138, 138); */
+  border-radius: 3px;
+  width: 100%;
+  font-size: 14px;
+}
+/* .data div{
+  width: 100%;
+} */
+.SN {
+  width: 15%;
+  /* background-color: aqua; */
+  text-align: center;
+}
+.Customer {
+  width: 30%;
+  /* background-color: rgb(238, 255, 0); */
+  text-align: center;
+}
+.address {
+  width: 30%;
+  /* background-color: rgb(238, 255, 0); */
+  /* text-align: center; */
+}
+.Total_Price {
+  width: 10%;
+  /* background-color: rgb(102, 255, 0);  */
+  text-align: center;
+}
+
+.Payment_Mode {
+  width: 15%;
+  /* background-color: rgb(0, 247, 255);  */
+  text-align: center;
+}
+.Status {
+  width: 15%;
+  /* background-color: rgb(255, 0, 179);  */
+  text-align: center;
+}
+.Action {
+  width: 15%;
+  /* background-color: rgb(195, 0, 255); */
+  text-align: center;
+}
+.Action a{
+  background-color: lightgreen;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.Action a:hover{
+  background-color: rgb(107, 216, 107);
+}
+
+
+
+/* order_detail.module.css */
+
+.trackingContainer {
+display: flex;
+justify-content: space-between;
+align-items: center;
+/* margin-bottom: 20px; */
+padding: 15px;
+/* background-color: #f8f9fa; */
+border-radius: 8px;
+}
+
+.trackingStep {
+text-align: center;
+/* flex: 0; */
+/* color: #6c757d; */
+color: white;
+font-weight: 500;
+background-color: #dcdcdc;
+padding: 10px;
+border-radius: 20px;
+font-weight: 700;
+
+}
+
+.activeStep {
+/* color: #007bff; */
+color: white;
+/* background-color:#007bff ; */
+background-color: rgb(27, 196, 27);
+padding: 10px;
+border-radius: 20px;
+font-weight: 700;
+}
+
+.stepConnector {
+height: 10px;
+background-color: #dcdcdc;
+flex: 1;
+margin: 0;
+}
+
+.activeConnector {
+/* background-color: #007bff; */
+background-color: rgb(27, 196, 27);
+
+}

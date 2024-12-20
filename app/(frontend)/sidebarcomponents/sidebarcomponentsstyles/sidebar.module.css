@@ -1,0 +1,62 @@
+.container{
+
+    height: 100%;
+    background-color: white;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    padding:20px 0 0px 0px;
+    box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.2);
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+/* WebKit scrollbar customization (Chrome, Safari) */
+.container::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+  }
+  
+  .container::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255); /* Background of the scrollbar track */
+    border-radius: 10px; /* Rounded edges for track */
+  }
+  
+  .container::-webkit-scrollbar-thumb {
+    background: rgb(42, 212, 0); /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded edges for thumb */
+  }
+  
+  .container::-webkit-scrollbar-thumb:hover {
+    background: rgb(34, 174, 0); /* Color on hover */
+  }
+  
+  /* Firefox scrollbar customization */
+  .container {
+    scrollbar-width: thin; /* "auto" or "thin" */
+    scrollbar-color: rgb(42, 212, 0) rgb(255, 255, 255); /* thumb color and track color */
+  }
+.hr{
+    margin-right: 15px;
+  }
+
+
+  
+  .dropdownHeader {
+    cursor: pointer;
+    padding: 10px;
+    /* background-color: rgb(42, 212, 0); */
+    border-radius: 5px;
+    margin: 5px 5px;
+  }
+  
+  .dropdownContent {
+    padding: 10px 0;
+    background-color: white; /* Background for dropdown content */
+    border-radius: 5px;
+    margin-bottom: 10px; /* Spacing between dropdowns */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow */
+  }
+  
+  .hr {
+    border: 1px solid #ccc; /* Style for horizontal rule */
+    margin: 10px 0; /* Spacing around horizontal rule */
+  }

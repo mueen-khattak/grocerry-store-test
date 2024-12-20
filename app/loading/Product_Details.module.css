@@ -1,0 +1,125 @@
+.main{
+    /* background: rgb(236, 236, 236); */
+    height: 75vh;
+    width: 85vw;
+    display: flex;
+    margin: 100px;
+    border-radius: 10px;
+}
+.left{
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    margin-left: 30px;
+    background-color:transparent;
+    /* background: #000; */
+    
+}
+.mainimg{
+    width: 100%;
+    height: 80%;
+    background: #b3b3b3;
+    border-radius: 10px;
+}
+.moreimages{
+    width: 100%;
+    height: 20%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+.moreimages div{
+    width: 18%;
+    height: 90%;
+    background: #b3b3b3;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+.category{
+    width: 20%;
+    height: 30px;
+    background: #00ff00;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+.title{
+    width: 60%;
+    height: 50px;
+    background: #00ff00;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+.price{
+     width: 25%;
+    height: 70px;
+    background: #00ff00;
+    margin: 20px;
+    border-radius: 10px;
+
+}
+.description{
+    width: 80%;
+    height: 170px;
+    background: #00ff00;
+    border-radius: 10px;
+    /* margin: 30px; */
+}
+.buttons{
+    width: 80%;
+    height: 60px;
+    background: transparent;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    /* background-color: aqua; */
+
+}
+.btn{
+    width: 40%;
+    height: 50%;
+    background: #00ff00;
+    margin: 0 30px;
+    border-radius: 10px;
+}
+/* FadeIn animation */
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 10;
+      background-color: #00ff00;
+    }
+  }
+  
+  /* Move Right-Left animation */
+  @keyframes moveRightLeft {
+    0% {
+      transform: translateX(10px);
+    }
+    50% {
+      transform: translateX(-10px);
+    }
+    100% {
+      transform: translateX(10px);
+    }
+  }
+  
+  /* Apply fadeIn to the .right container */
+  /* .fadeIn {
+    animation: fadeIn 2s infinite ease-in-out;
+  }
+   */
+  /* Apply moveRightLeft to child divs inside .right */
+  .moveRightLeft {
+    animation: moveRightLeft 1.5s infinite ease-in-out;
+  }
+  

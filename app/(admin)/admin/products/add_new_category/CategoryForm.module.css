@@ -1,0 +1,56 @@
+    .form_container {
+    background-color: white;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e6e6e6;
+  }
+  
+  .form_container h2 {
+    color: #000000; /* Green heading */
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .category_form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .category_form  label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .category_form  input[type="text"],
+  .category_form  input[type="file"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  
+  .category_form  input[type="text"]:focus {
+    border-color: #2e7d32; /* Green border on focus */
+    outline: none;
+  }
+  
+  .submit_button {
+    background-color: #2e7d32;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .submit_button:hover {
+    background-color: #1b5e20; /* Darker green on hover */
+  }
+  
+  

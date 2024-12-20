@@ -1,6 +1,32 @@
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #171717;
+  --primary-color: rgb(38, 192, 0);  
+  --secondary-color: #ffffff; 
+  --text-color: #333; 
+
+}
+
+body.loading {
+  cursor: progress;
+}
+#nprogress .bar {
+  background:  rgb(38, 192, 0)  !important; 
+}
+
+
+#nprogress .spinner-icon {
+  border-top-color:  rgb(38, 192, 0) !important; 
+  border-left-color:  rgb(38, 192, 0) !important;
+}
+
+#nprogress .bar {
+  background:  rgb(38, 192, 0); 
+  height: 3px; 
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px  rgb(38, 192, 0), 0 0 5px  rgb(38, 192, 0);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,6 +48,100 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */
+
+
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --primary-color: rgb(38, 192, 0);  
+  --secondary-color: #ffffff; 
+  --text-color: #333; 
+
+  /* Font Variables */
+  --font-primary: 'Poppins', sans-serif; /* For headings */
+  --font-secondary: 'Roboto', sans-serif; /* For body text */
+}
+
+body.loading {
+  cursor: progress;
+}
+/* styles/globals.css */
+body {
+  cursor: default; /* Normal cursor */
+}
+
+body.loading {
+  cursor: progress; /* Loading cursor for route changes */
+}
+
+#nprogress .bar {
+  background: rgb(38, 192, 0) !important; 
+}
+
+#nprogress .spinner-icon {
+  border-top-color: rgb(38, 192, 0) !important; 
+  border-left-color: rgb(38, 192, 0) !important;
+}
+
+#nprogress .bar {
+  background: rgb(38, 192, 0); 
+  height: 3px; 
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px rgb(38, 192, 0), 0 0 5px rgb(38, 192, 0);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-secondary); /* Use Roboto for body text */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6,a {
+  font-family: var(--font-primary); /* Use Poppins for headings */
+  color: var(--text-color);
+}
+
+p, span,  li, input, button {
+  font-family: var(--font-secondary); /* Use Roboto for general text */
 }
 
 * {

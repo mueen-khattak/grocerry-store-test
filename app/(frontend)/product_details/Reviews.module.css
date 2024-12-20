@@ -1,0 +1,231 @@
+/* Reviews Component Styling */
+.reviews_container {
+  width: 100%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #eeeeee;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.date{
+  font-weight: 100;
+  color: darkgray;
+  font-size: 15px;
+}
+.title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  font-weight: 100;
+  color: #333;
+}
+.reviewbox{
+  background:transparent;
+  /* border: 1px solid #ddd; */
+  border-radius: 8px;
+  display: flex;
+  
+  /* margin-bottom: 15px; */
+}
+
+.user_info {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 41px;
+  height: 41px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  /* margin-left: 5px; */
+  background: #ffffff;
+  /* border: 2px solid green; */
+  overflow: hidden;
+
+}
+.avatarLetter{
+  width: 30px;
+  height: 30px;
+  /* padding: 0 10px; */
+  border-radius: 50%;
+  background-color: #1eff00;
+  color: white;
+  font-size: 22px;
+  /* padding: 2px; */
+  font-weight: 500;
+  text-align: center;
+  /* margin-right: 5px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.avatarImage{
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.user_name {
+  font-size: 18px;
+  font-weight: 100;
+  color: #333;
+}
+
+.review {
+  padding: 15px;
+  background: #ffffff;
+  border: none;
+  border-radius: 10px;
+  margin: 20px;
+  width: 50%;
+  height: fit-content;
+}
+.starsbox{
+  display: flex;
+  justify-content: space-between;
+}
+.stars {
+  font-size: 20px;
+  margin: 3px;
+
+}
+
+.review_text {
+  margin-top: 10px;
+  margin: 10px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+.popup_overlay {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup_modal {
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  position: absolute;
+  max-width: 60%;
+  max-height: 90%;
+  overflow: hidden;
+}
+
+
+
+.close_btn {
+  display: none;
+  position: absolute;
+  top: -30px;
+  right: -30px;
+  background: #fcfcfc;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  
+}
+
+
+.review_image {
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  border-radius: 8px;
+}
+.image{
+  width:150px;
+  height: 100px;
+  display: inline;
+}
+.imagePreviewContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.imagePreview {
+  position: relative;
+}
+
+.removeImageBtn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* Swiper container */
+.swiper {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+/* Swiper slide */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f9f9; /* Light background for slides */
+  border-radius: 8px; /* Rounded corners for slides */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 10px;
+}
+
+/* Swiper image */
+.popup_image {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+
+  object-fit: cover; /* Ensure image fits well within slide */
+}
+
+/* Navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff; /* White arrows */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 50%; /* Circular buttons */
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
+/* Pagination dots */
+.swiper-pagination-bullet {
+  background: #999; /* Default dot color */
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4c9fff; /* Active dot color (blue in this example) */
+  
+}

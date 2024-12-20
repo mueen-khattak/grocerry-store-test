@@ -1,0 +1,101 @@
+.footer {
+  background-color: rgb(42, 212, 0);
+  /* background-color: white; */
+  color: #ecf0f1;
+  margin-top: 10vh;
+    padding: 40px 20px;  
+    position: sticky;
+    bottom: 0px; 
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .storeInfo, .links, .newsletter, .social {
+    flex: 1;
+    margin: 10px 20px;
+  }
+  
+  .storeInfo h3, .storeInfo h4 {
+    color: #f39c12;
+    margin-bottom: 15px;
+  }
+  
+  .links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .links ul li {
+    margin: 8px 0;
+  }
+  
+  .links ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .links ul li a:hover {
+    color: #f39c12;
+  }
+  
+  .newsletter input[type="email"] {
+    padding: 10px;
+    width: 70%;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .newsletter button {
+    padding: 10px 20px;
+    background-color: #f39c12;
+    border: none;
+    color: #2c3e50;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .newsletter button:hover {
+    background-color: #e67e22;
+  }
+  
+  .social a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .social a:hover {
+    color: #f39c12;
+  }
+  
+  .bottomBar {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #34495e;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .newsletter input[type="email"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  
